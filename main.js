@@ -2,5 +2,7 @@ const button = document.getElementById("button");
 const flex = document.getElementById("flex");
 
 button.onclick = () => {
-  flex.innerHTML = "<div class='block'></div>"
+  const newBlock = document.createElement('div')
+  newBlock.className = "block"
+  flex.appendChild(newBlock)
 };
